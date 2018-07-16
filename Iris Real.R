@@ -1,0 +1,10 @@
+?iris
+names(iris)
+iris
+str(iris)
+iris$new_class_specis<-as.character(iris$Species)
+iris$new_class_specis<-NULL
+iris$Species<-gsub("%","",iris$Species)
+iris<-na.omit(iris)
+summary(iris)
+plot(iris)
